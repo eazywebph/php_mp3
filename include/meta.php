@@ -1,0 +1,2 @@
+<meta name="keywords" content="cebu photographer, music photographer, cebu music photographer, cebu music, cebu photographer, photographer, cebu musicians, cebu music, cebu concert photographer, concert photographer, gig photographer, cebu music scene, concert photographer cebu">
+<meta name="description" content="Miguelito, Music Photographer">	

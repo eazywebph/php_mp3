@@ -1,0 +1,48 @@
+
+Gigs Gallery ID
+200001 - this is the gallery for Killing Amy live at HQZ at December 2, 2016
+200002 - this is the gallery from the Album "HQZ"
+
+
+Stock Photo Categories and Category ID reference [img_GalleryID]
+100001		- 	Animals
+100002		-	Architecture
+100003		- 	Background
+100004		-	Beauty
+100005		- 	Business
+100006		-	Children
+100007		-	Education
+100008		-	Environment
+100009		-	Family
+100010		-	Food
+100011		-	Health
+100012		-	Holiday
+100013		-	Beach/Sea
+100014		-	Home
+100015		-	Icons
+100016		-	Industry
+100017		-	Internet
+100018		-	Landscape
+100019		-	Love
+100020		-	Music
+100030		-	Nature
+100031		-	Party
+100032		-	People
+100033		-	Sexy
+100034		-	Smile
+100035		-	Smile
+100036		-	Sports
+100037		-	Texture
+100038		-	Transportation
+100039		-	Travel
+100040		-	Vector
+100041		-	Meme
+100042		-	Book Covers
+
+
+
+
+
+
+
+

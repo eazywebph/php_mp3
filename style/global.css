@@ -1,0 +1,491 @@
+
+/* Created by Miguel Batiquin | MeguelitoPhotography.com */
+
+body {
+	background-color: #fff;
+	color: #ffffff;
+	font-family: verdana, arial, tahoma;
+	margin: 0;
+}
+
+/* Main div serves as a wrapper / landmark */
+
+#main {
+	width: 100%;
+}
+
+/* Header div */
+
+#header {
+	width: 100%;
+	height: 40px;
+	top: 0px;
+}
+
+	#header ul {
+		list-style-type: none;
+		margin: 0;
+		padding: 10px 0 0 0;
+		overflow: hidden;
+		background-color: #000000;
+	}
+	
+	#header li {
+		float: left;
+		font: 1em roboto;
+		padding: 5px 5px 10px 5px;
+	}
+	
+	#header a {
+		text-decoration: none;
+		color: #999999;
+		padding: 15px;
+	}
+	
+	#header a:hover {
+		text-decoration: none;
+		color: #fff;
+	}
+	
+	#header .active {
+		color: #ffffff;
+	}
+
+	#header img {
+		max-width:30px;
+		max-height:30px;
+		width: auto;
+		height: auto;
+		padding: 0;
+		margin: -10px;
+		float: left;
+		background-color: #fff;
+	}
+	
+
+/* Homepage body div */
+	
+#home {
+	width: 100%;
+	height: 90%;
+	margin: 25px 0;
+	padding: 0;
+}
+
+	#polina { 
+	  font-weight:100; 
+	  background: rgba(0,0,0,0.6);
+	  color: white;
+	  padding: 2rem;
+	  width: 500px;
+	  margin: 5rem 5rem;
+	  float: right;
+	  font-size: 1.2rem;
+	  text-align: left;
+	}
+
+	h1 {
+	  font-size: 3rem;
+	  text-transform: uppercase;
+	  margin-top: 0;
+	  letter-spacing: .3rem;
+	}
+
+	video { 
+		position: fixed;
+		top: 50%;
+		left: 50%;
+		padding: 0;
+		min-width: 90%;
+		min-height: 90%;
+		width: auto;
+		height: auto;
+		z-index: -100;
+		transform: translateX(-50%) translateY(-50%);
+		background: url(bg/006.jpg) no-repeat; 
+		background-size: cover;
+		transition: 1s opacity;
+	}
+	
+	.stopfade { 
+	   opacity: .5;
+	}
+
+	
+/* Footer goes here */
+#footer {
+	margin: 10% 0 0 0;
+	padding: 0;
+	width: 100%;
+	color: #333;
+	bottom: 0;
+	top: 0;
+	height: 150px;		
+	/*text-shadow: -0.5px -0.5px #111;*/
+}
+
+	#footer p {
+		font: 0.8em verdana;
+		margin: 0;
+		line-height: 1.5em;
+		font-weight: 400;
+	}
+	
+	#footer a {
+		color: #3399ff;
+		text-decoration: none;
+		font-weight: bold;
+	}
+	
+	#footer a:hover {
+		color: #cc6666;
+	}
+	
+/* gigs.php and many other page uses this */
+#page {
+	width: 100%;
+	margin: auto;
+	padding: 0;
+}
+
+#gallery {
+	width: 100%;
+	margin: 0;
+	padding: 0;
+}
+
+	/* supposed it's a dropdown here */
+	.dropbtn {
+		color: #000;
+		padding: 10px;
+		font-size: 0.9em;
+		border: none;
+		margin: 50px 0 0 0;
+		background-color: inherit;
+	}
+
+	.dropdown-content {
+		display: inline;
+	}	
+
+	.dropdown-content a {
+		color: #000;
+		padding: 10px;
+		text-decoration: none;
+		font: 0.85em verdana;
+	}
+	
+	.dropdown-content a:hover { background-color: #ccc }
+	
+	.active_sub { background-color: #ccc; }
+	
+/* This is for the thumbnails */	 
+.clearfix {
+	clear:both;
+	}
+	
+.clearfix:after { 
+	visibility: hidden; 
+	display: block; 
+	font-size: 0; 
+	content: " "; 
+	clear: both; 
+	height: 0; 
+	}
+
+.thumbnails { 
+	width: auto; 
+	margin: 0 0 0 20px; 
+	padding:0;
+	text-align: center;
+	}
+	
+.thumbnails a {
+	color:#9F9F9F; 
+	display:block
+	}
+
+.thumbnails li { 
+	float: left; 
+	margin:5px; 
+	position: relative; 
+	width: 350px; 
+	overflow: hidden;
+	cursor: pointer;
+	}
+
+.thumbnails li img {
+	width:350px; 
+	height:350px;
+	}
+
+.thumbnails li .thumb_overlay { 
+	height: 350px; 
+	width: 100%; 
+	z-index: 3; 
+	position: absolute; 
+	top: 0; left: 0; 
+	background-color: #000; 
+	opacity:0; 
+	transition:all 0.3s ease; 
+	}
+
+.thumbnails li:hover .thumb_overlay { 
+	opacity:0.5;
+	}
+
+.thumbnails li .thumb-info { 
+	width:350px; 
+	background-color: #375d81; 
+	position:absolute; 
+	bottom:-122px; left:0; 
+	z-index:5; 
+	transition:all 0.3s ease; 
+	}
+
+.thumbnails li:hover .thumb-info { 
+	bottom:0;
+	}
+
+.thumbnails li .thumb-info h3 { 
+	margin:10px 0 10px 0px; 
+	color:#fff; 
+	font-family:Roboto,Helvetica,sans-serif; 
+	font-weight:300; 
+	font-size:1.1em; 
+	line-height:0.8rem; 
+	}
+
+.thumbnails li .thumb-info p { 
+	margin:-15px 0 0 0; 
+	padding: 15px; 
+	color:#abc8d2; 
+	font: 1em Roboto, Helvetica,sans-serif; 
+	line-height: 1.1em; 
+	font-weight:300;
+	}
+	
+	.thumbnails img {
+		cursor: pointer;
+	}
+	
+	
+/* only for viewer.php */
+
+#viewer {
+	margin: 0;
+	padding: 0;
+	text-align: center;
+}
+
+	#viewer img {
+		padding: 0;
+		margin: 25px 0;
+		max-width: 90%;
+		max-height: 90%;
+	}
+	
+	#viewer p {
+		color: #6f6f6f;
+		text-align: left;
+		margin: 2% 7.5% 10% 7.5%;
+		font: 1.1em roboto;
+		line-height: 2em;
+		text-decoration: none;
+	}
+	
+	#viewer p a {
+		text-decoration: none;
+		color: #ffffff;
+		padding: 15px;
+		background-color: #00349e;
+	}
+	
+		#viewer p a:hover {
+			background-color: #85a2dd;
+		}
+	
+	.navigator {
+		width: 100%;
+		text-align: center;
+		margin:0 0 100px 0;
+		padding: 10px 0;
+	}
+	
+		.navigator a {
+			padding: 10px;
+			background-color: #000;
+			font: 0.9em roboto;
+			text-decoration: none;
+			color: #fff;
+		}
+
+		.navigator a:hover {
+			background-color: #777;
+		}
+		
+#about {
+	width: 60%;
+	height: auto;
+	margin: 50px 0;
+	padding: 0;
+	color: #000;
+}
+
+	#about h1 {
+		font: 1.8em roboto;
+		color: #333;
+	}
+	
+	#about h2 {
+		font: 1.3em roboto;
+		text-transform: uppercase;
+		color: #555;
+	}
+	
+	#about p {
+		color: #777;
+	}
+	
+	#about img {
+		padding: 0;
+		padding: 15px;
+	}
+	
+	#about a {
+		text-decoration: none;
+		color: green;
+		font-weight: bold;
+	}
+	
+	#about a:hover {
+		color: #33ccff;
+	}
+	
+#contact {
+	height: auto;
+	margin: 50px 0;
+	padding: 0;
+	color: #000;
+}
+
+	#contact h1 {
+		font: 2em roboto;
+	}
+	
+	#contact form {
+		margin: 50px 0 0 0;
+		font: 1em roboto;
+		text-align: left;
+		width: 650px;
+		line-height: 2.5em;
+		text-transform: uppercase;
+	}
+	
+	#contact .input {
+		font: 1em roboto;
+		width: 100%;
+		height: 45px;
+	}
+	
+	#contact .textarea {
+		font: 1em roboto;
+		width: 100%;
+		height: 200px;
+	}
+	
+	#contact .button {
+		width: 170px;
+		padding: 15px;
+		margin: 20px 10px 0 0;
+		border: 0;
+		background-color: #81a3db;
+		color: #fff;
+		text-transform: uppercase;
+		font: 0.9em roboto;
+	}
+	
+	#contact .button:hover {
+		background-color: #bfd1ef;
+	}
+	
+	#contact .captcha {
+		width: 70px;
+		height: 45px;
+		font: 1em robot;
+		margin: 25px 0 0 0;
+		font: 1em roboto;
+	}
+	
+	#contact .contact_details {
+		width: 750px;
+		height: auto;
+		background-color: #999;
+		margin: 100px 0 0 0;
+	}
+	
+	.contact_details img {
+		max-width: 700px;
+	}
+	
+	.contact_details p {
+		text-align: left;
+		padding: 25px 0 0 25px;
+		color: #fff;
+	}
+	
+	.contact_details p  a {
+		text-decoration: none;
+		color: #33ffff;
+	}
+	
+	.fb-comments {
+		background-color: #fff;
+		margin: 0 0 50px 0;
+	}
+	
+#album {
+	color: #000;
+	margin: 0;
+	padding: 5px 15px;
+	text-align: center;
+	background-color: #fff;
+}
+
+	#album h1 {
+		font: 1.7em roboto;
+	}
+	
+	#album h2 {
+		font: 1.3em roboto;
+	}
+	
+	#album h3 {
+		font: 0.85em roboto;
+		font-weight: 250;
+	}
+	
+	#album .slide {
+		max-width: 100%;
+		height: 100%;
+		text-align: center;
+		margin: 10px;
+	}
+
+		#album .slide:hover { 
+		opacity: 0.8;
+		}
+		
+	#album .top {
+		text-decoration: none;
+		color: #000;
+	}
+		
+		#album .top:hover {
+			opacity: 0.5;
+		}
+
+
+
+
+

@@ -1,0 +1,85 @@
+
+<?php
+include ('inc_session.php');
+if ($_SESSION['login'] == "1") {
+include ('inc_connect.php');
+?>
+
+<html><head><title>MP Admin</title></head><body>
+
+<h1>MP Admin Login</h1>
+<?php
+date_default_timezone_set('Asia/Manila');
+echo date('M')." ".date('d').", ".date('Y')." - ".date('g').":".date('i')." ".date('A');
+?>
+&nbsp;&nbsp;<a href="../index.php" target="new">Home</a>
+&nbsp;&nbsp;<a href="../gallery.php?show=All" target="new">Gallery</a>
+&nbsp;&nbsp;<a href="../blog" target="new">Blog</a>
+&nbsp;&nbsp;<a href="logout.php" target="new">Logout</a>
+<br/><br/>
+<hr/>
+
+<br/>
+<h3>Admin Links</h3>
+Manage:&nbsp;&nbsp;&nbsp;
+<a href="album.php">Album</a>&nbsp;&nbsp;&nbsp;
+<a href="gallery.php">Gallery</a>&nbsp;&nbsp;&nbsp;
+<a href="categories.php">Categories</a>&nbsp;&nbsp;&nbsp;
+<br/><br/>
+<hr/>
+
+<br/>
+<h3>Database Overview</h3>
+
+<?php
+$q_cat = mysqli_query($connect,"SELECT * FROM tbl_category");
+$q_gal = mysqli_query($connect,"SELECT * FROM tbl_gallery");
+$q_gai = mysqli_query($connect,"SELECT * FROM tbl_galleryid");
+
+$c_cat = mysqli_num_rows($q_cat);
+$c_gal = mysqli_num_rows($q_gal);
+$c_gai = mysqli_num_rows($q_gai);
+?>
+
+<h4>Image Categories: <?php echo $c_cat; ?></h4>
+<?php
+while ($q_cat_row=$q_cat->fetch_assoc()) {
+	echo "<br/>ID: &nbsp;";
+	echo $q_cat_row['cat_CategoryID']."<br/>";
+	echo "Name: &nbsp;";
+	echo $q_cat_row['cat_CategoryName']."<br/>";;
+	echo "Description: &nbsp;";
+	echo $q_cat_row['cat_CategoryDescription']."<br/><br/>";
+}
+?>
+<br/>
+<h4>Image Count: <?php echo $c_gal; ?></h4>
+<?php
+while ($q_gal_row=$q_gal->fetch_assoc()) {
+	echo "<br/>ID: &nbsp;";
+	echo $q_gal_row['img_ID']."<br/>";
+	echo "File Name: &nbsp;";
+	echo $q_gal_row['img_FileName']."<br/>";
+	echo "Album ID: &nbsp;";
+	echo $q_gal_row['img_GalleryID']."<br/>";
+	echo "Category: &nbsp;";
+	echo $q_gal_row['img_GalleryCategory']."<br/>";
+}
+?>
+
+<br/><br/>
+Album Count: <?php echo $c_gai; ?><br/>
+
+
+<br/>
+
+</body>
+
+</html>
+
+<?php
+}
+else {
+header('location:login.php');
+}
+?>

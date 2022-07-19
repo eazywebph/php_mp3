@@ -1,0 +1,377 @@
+
+/* Created by Miguel Batiquin | MeguelitoPhotography.com */
+
+body {
+	color: #ffffff;
+	font-family: verdana, arial, tahoma;
+	margin: 0;
+}
+
+/* Main div serves as a wrapper / landmark */
+
+#main {
+	width: 100%;
+}
+
+/* Header div */
+#header {
+	margin:0;
+	padding: 0;
+	background-color: #000;
+	text-align: left;
+}
+
+#header ul {
+  padding: 0;
+  margin: 0;
+}
+
+#header li {
+  margin: 0px;
+  display: block;
+  background-color: #000000;
+}
+
+#header a {
+  display: block;
+  padding: 10px;
+  color: #fff;
+  font-size: 15px;
+  text-decoration: none;
+}
+
+#header a:hover { 
+	background-color: #666;
+	color: #fff;
+}
+
+.social {
+	width: 0;
+}
+
+.social img {
+	width: 0;
+}
+
+/* Homepage body div */
+	
+#home {
+	width: 100%;
+	height: 100%;
+	margin: 0;
+	padding: 0;
+}
+
+	#polina { 
+	  font: 1em verdana;
+	  background: rgba(0,0,0,0.6);
+	  color: white;
+	  padding: 15px;
+	  width: 95%;
+	  margin: 5rem 0;
+	  text-align: left;
+	}
+	
+	h1 {
+	  font-size: 1rem;
+	  text-transform: uppercase;
+	  margin-top: 0;
+	  letter-spacing: .2rem;
+	}
+	
+	video { 
+		position: fixed;
+		top: 50%;
+		left: 50%;
+		padding: 0;
+		min-width: 90%;
+		min-height: 90%;
+		width: auto;
+		height: auto;
+		z-index: -100;
+		transform: translateX(-47%) translateY(-47%);
+		background: url(bg/006.jpg) no-repeat;
+		background-size: cover;
+		transition: 1s opacity;
+	}
+	
+	
+/* Footer goes here */
+#footer {
+	margin: 5% 0 0 0;
+	padding: 0;
+	width: 100%;
+	color: #666;
+	height: 150px;
+	bottom: 0;
+	top: 0;
+}
+
+	#footer p {
+		font: 0.8em verdana;
+		padding: 5px;
+		line-height: 1.5em;
+	}
+	
+	#footer a {
+		color: #000;
+		text-decoration: none;
+		font-weight: bold;
+	}
+	
+	#footer a:hover {
+		text-decoration: underline;
+	}
+	
+#page {
+	width: 100%;
+	margin: auto;
+	padding: 0;
+	text-align: center;
+}
+
+#gallery {
+	width: 100%;
+	margin: 0;
+	padding: 0;
+	text-align: center;
+}
+
+	/* This is for the category sorter */
+	.dropbtn {
+		background-color: #000;
+		color: #fff;
+		padding: 10px;
+		font-size: 1em;
+		border: none;
+		cursor: pointer;
+		margin: 50px 0 0 0;
+	}
+	
+	.dropdown {
+		position: relative;
+		display: inline-block;
+	}
+	
+	.dropdown-content {
+		display: none;
+		position: absolute;
+		background-color: #444;
+	}
+	
+	.dropdown-content a {
+		color: #fff;
+		padding: 10px;
+		text-decoration: none;
+		display: block;
+		font: 0.85em verdana;
+		text-align: center;
+		background-color: #444;
+		min-width: 163px;
+	}
+
+	.dropdown-content a:hover { background-color: #999; }
+
+	.dropdown:hover .dropdown-content {
+		display: block;
+	}
+
+	.dropdown:hover .dropbtn {
+		background-color: #444;
+	}
+	
+	/* these are for the images */
+	.thumbnails { 
+	width: auto; 
+	padding:0;
+	text-align: center;
+	}
+	
+	.thumbnails li .thumb-info h3 { 
+	margin:10px 0 10px 0px; 
+	color:#666; 
+	font-family:Roboto,Helvetica,sans-serif; 
+	font-weight:400; 
+	font-size:1.5em; 
+	line-height: 1.5em;
+	}
+	
+	.thumbnails li .thumb-info p { 
+	margin:-15px 0 50px 0; 
+	padding: 15px; 
+	color:#666; 
+	font: 1.2em Roboto, Helvetica,sans-serif; 
+	line-height: 1.2em; 
+	font-weight:300;
+	}
+	
+	.thumbnails img {
+		cursor: pointer;
+		max-width: 70%;
+	}
+	
+/* only for viewer.php */
+
+#viewer {
+	margin: 0;
+	padding: 0;
+	text-align: center;
+}
+
+	#viewer img {
+		padding: 0 2.5%;
+		margin: 25px 0;
+		max-width: 200%;
+	}
+
+	#viewer p {
+		color: #6f6f6f;
+		text-align: left;
+		margin: 5%;
+		font: 1.1em roboto;
+		text-decoration: none;
+		line-height: 1.7em;
+	}
+	
+		#viewer p a {
+			text-decoration: none;
+			color: #ffffff;
+			padding: 10px;
+			background-color: #00349e;
+		}
+		
+			#viewer p a:hover {
+				background-color: #85a2dd;
+			}
+			
+	.navigator {
+		width: 100%;
+		text-align: center;
+		margin: 0;
+		padding: 10px 0;
+	}
+	
+		.navigator a {
+			padding: 10px;
+			background-color: #000;
+			font: 0.9em roboto;
+			text-decoration: none;
+			color: #fff;
+		}
+
+		.navigator a:hover {
+			background-color: #777;
+		}
+	
+#about {
+	color: #000;
+	text-align: left;
+}
+
+	#about h1 {
+		font: 2em roboto;
+		margin: 50px 0 0 0;
+		padding: 0 25px;
+	}
+	
+	#about h2 {
+		font: 1.5em roboto;
+		text-transform: uppercase;
+		margin: 50px 0 0 0;
+		padding: 0 25px;
+	}
+	
+	#about p {
+		font: 1.2em roboto;
+		padding: 10px;
+		padding: 0 25px;
+		line-height: 2em;
+	}
+	
+	#about img {
+		padding: 0;
+		padding: 15px;
+		max-width: 350px;
+	}
+	
+	#about p a {
+		text-decoration: none;
+		color: green;
+	}
+	
+	.fb-page {
+		padding: 0 25px;
+	}
+	
+	.instagram {
+		padding: 0 25px;
+	}
+	
+#contact {
+	margin: 70px 0;
+	padding: 0;
+	color: #000;
+}
+
+	#contact h1 {
+		font: 1em roboto;
+	}
+	
+	#contact form {
+		margin: 10px 0 0 0;
+		font: 0.8em roboto;
+		line-height: 2.5em;
+		text-transform: uppercase;
+	}
+	
+	#contact .input {
+		font: 1em roboto;
+		width: 80%;
+		height: 30px;
+	}
+	
+	#contact .textarea {
+		font: 1em roboto;
+		width: 80%;
+		height: 100px;
+	}
+	
+	#contact .button {
+		width: 150px;
+		padding: 15px;
+		margin: 20px 10px 0 0;
+		border: 0;
+		background-color: #81a3db;
+		color: #fff;
+		text-transform: uppercase;
+		font: 1em roboto;
+	}
+	
+	#contact .g-recaptcha {
+	transform:scale(0);
+	-webkit-transform:scale(0.80);
+	}
+	
+	#contact img {
+		max-width: 100%;
+	}
+	
+	.contact_details {
+		text-align: left;
+		padding: 0 25px;
+		font: 1em roboto;
+		margin: 50px 0 0 0;
+		line-height: 3em;
+	}
+	
+		.contact_details a {
+			text-decoration: none;
+			color: green;
+		}
+	
+	
+	
+	
+	
+	
+	

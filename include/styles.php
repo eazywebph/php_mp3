@@ -1,0 +1,2 @@
+<link rel="stylesheet" type="text/css" media="screen and (min-width: 801px)" href="style/global.css" />
+	<link rel="stylesheet" type="text/css" media="screen and (max-width: 800px)" href="style/mobile.css">

@@ -1,0 +1,121 @@
+
+Gallery Database
+
+==========================================================================================
+
+tbl_Gallery
+- Image ID
+- Header
+- FileName (is a combination of 100001_ description, 100001_killing_amy_live_at_hqz_dec_4_2016.jpg)
+- Description
+- Date (mm)
+- Date (dd)
+- Date (yyyy)
+- Gallery ID (x) (int4)
+- Gallery Category (x) (varchar40)
+- Keywords (varchar5000)
+- thumb1 (varchar300)
+
+
+tbl_gallery					type					sample value
+img_ID						int(6)					1000001
+img_Header					varchar(170)			Small fishing boat.
+img_FileName				varchar(1000)			100001_Fishing_boat_in_Bantayan.jpg
+img_Description				varchar(1000)			100001_Fishing_boat_in_Bantayan.jpg
+img_Month					varchar(10)				May
+img_Day						int(2)					13
+img_Year					int(4)					2017
+img_GalleryID				int(6)					
+img_GalleryCategory			varchar(40)
+img_Keywords				varchar(5000)
+img_thumb1					varchar(300)
+
+
+==========================================================================================
+
+tbl_GalleryID
+- Gallery ID (int4)
+- Name
+- Description
+
+tbl_GalleryID				type
+gal_GalleryID				int(4)
+gal_Name					varchar(50)
+gal_Description				varchar(300)
+
+==========================================================================================
+
+tbl_category
+- Category ID (varchar40)
+- Name
+- Description
+
+tbl_Category				type
+cat_CategoryID				int(3)
+cat_CategoryName			varchar(50)
+cat_CategoryDescription		varchar(300)
+
+==========================================================================================
+
+Category are as follows.
+Stock
+Places
+Party
+Portrait
+Fans
+Gigs
+
+Main DB
+Host: dbo680746263
+DB Name: db680746263
+User: dbo680746263
+Pass: T233525-25
+
+==========================================================================================
+
+
+mysqli.php
+<?php
+    $host_name  = "db680746263.db.1and1.com
+";
+    $database   = "db680746263
+";
+    $user_name  = "dbo680746263
+";
+    $password   = "T233525-25";
+
+
+    $connect = mysqli_connect($host_name, $user_name, $password, $database);
+    
+    if(mysqli_connect_errno())
+    {
+    echo '<p>Failed to connect to MySQL: '.mysqli_connect_error().'</p>';
+    }
+    else
+    {
+    echo '<p>Connection to MySQL server successfully established.</p>';
+    }
+?>
+
+<?php
+    $host_name  = "db680746263.db.1and1.com
+";
+    $database   = "db680746263
+";
+    $user_name  = "dbo680746263
+";
+    $password   = "T233525-25";
+
+
+    $connect = mysqli_connect($host_name, $user_name, $password, $database);
+    
+    if(mysqli_connect_errno())
+    {
+    echo '<p>Failed to connect to MySQL: '.mysqli_connect_error().'</p>';
+    }
+    else
+    {
+    echo '<p>Connection to MySQL server successfully established.</p>';
+    }
+?>
+
